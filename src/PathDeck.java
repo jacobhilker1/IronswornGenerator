@@ -1,11 +1,10 @@
 import java.util.Hashtable;
 import java.util.ArrayList;
-class PathDeck extends ArrayList implements Comparable<Deck> {
+class PathDeck extends Deck implements Comparable<Deck> {
    protected String category;
    protected Hashtable<String, Asset> assets;
   public PathDeck(String category)  {
-     this.category = category;
-     assets = new Hashtable<String, Asset>();
+         super(category);
   }
 
   public boolean equals(Deck d){

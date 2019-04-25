@@ -22,5 +22,5 @@ class Deck extends ArrayList implements Comparable<Deck>  {
    public void add(Asset a){
      assets.put(a.getName(), a);
    }
-   public void init() { }
+   private void init() { }
 }  
